@@ -29,7 +29,7 @@ downloading.)
 ## Usage
 
 It is possible to build stand-alone class libraries with all *csipopt* code from the *Cureos.Numerics* solution. 
-Open this solution in Visual Studio 2019 or 2022 and build the *Cureos.Numerics* (.NET Standard 2.0), then reference the built project in your own application.
+Open this solution in Visual Studio 2022 and build the *Cureos.Numerics* (.NET Standard 2.0), then reference the built project in your own application.
 
 To use the C# interface in your own code, you can also copy the C# files _Ipopt*.cs_ to your class library. 
 (Potentially, you may need to redefine the `IpoptDllName` in the *IpoptAdapter.cs* file to match the name of the 
