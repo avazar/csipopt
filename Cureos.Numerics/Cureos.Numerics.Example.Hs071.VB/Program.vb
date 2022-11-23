@@ -22,8 +22,8 @@ Namespace hs071_cs
             Dim obj As Double
             Dim status As IpoptReturnCode
 
-            Using problem As New IpoptProblem(p.n, p.x_L, p.x_U, p.m, p.g_L, p.g_U, _
-             p.nele_jac, p.nele_hess, AddressOf p.eval_f, AddressOf p.eval_g, _
+            Using problem As New IpoptProblem(p.n, p.x_L, p.x_U, p.m, p.g_L, p.g_U,
+             p.nele_jac, p.nele_hess, AddressOf p.eval_f, AddressOf p.eval_g,
              AddressOf p.eval_grad_f, AddressOf p.eval_jac_g, AddressOf p.eval_h)
                 ' Set some options.  Note the following ones are only examples,
                 ' they might not be suitable for your problem. 
@@ -95,7 +95,7 @@ Namespace hs071_cs
             Return True
         End Function
 
-        Public Function eval_jac_g(ByVal n As Integer, ByVal x As Double(), ByVal new_x As Boolean, ByVal m As Integer, ByVal nele_jac As Integer, ByVal iRow As Integer(), _
+        Public Function eval_jac_g(ByVal n As Integer, ByVal x As Double(), ByVal new_x As Boolean, ByVal m As Integer, ByVal nele_jac As Integer, ByVal iRow As Integer(),
          ByVal jCol As Integer(), ByVal values As Double()) As Boolean
             If values Is Nothing Then
                 ' set the structure of the jacobian 
@@ -132,7 +132,7 @@ Namespace hs071_cs
             Return True
         End Function
 
-        Public Function eval_h(ByVal n As Integer, ByVal x As Double(), ByVal new_x As Boolean, ByVal obj_factor As Double, ByVal m As Integer, ByVal lambda As Double(), _
+        Public Function eval_h(ByVal n As Integer, ByVal x As Double(), ByVal new_x As Boolean, ByVal obj_factor As Double, ByVal m As Integer, ByVal lambda As Double(),
          ByVal new_lambda As Boolean, ByVal nele_hess As Integer, ByVal iRow As Integer(), ByVal jCol As Integer(), ByVal values As Double()) As Boolean
             If values Is Nothing Then
                 ' set the Hessian structure. This is a symmetric matrix, fill the lower left triangle only. 
