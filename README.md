@@ -39,6 +39,8 @@ native *Ipopt* DLL.)
 
 The example project is included in the VS Solution 
 - Cureos.Numerics.Example.Hs071 - C# project
+- Cureos.Numerics.Example.Hs071.VB - VB project
+- Cureos.Numerics.Example.Hs071.FS - F# project
 
 ## Revision
 
