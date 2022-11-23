@@ -29,3 +29,6 @@ Ipopt*.dll
 /Cureos.Numerics/Tests.Cureos.Numerics/obj/
 /Cureos.Numerics/packages/*/
 *.nb
+
+# Visual Studio 2015 cache/options directory
+.vs/

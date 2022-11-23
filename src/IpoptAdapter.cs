@@ -162,7 +162,7 @@ namespace Cureos.Numerics
 	{
 		#region FIELDS
 
-		private const string IpoptDllName = "IpOpt-vc10";
+		private const string IpoptDllName = "ipopt-3";
 
 		#endregion
 
